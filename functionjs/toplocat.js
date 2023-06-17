@@ -26,12 +26,12 @@ element.appendChild(fragment); */
 function topcreat(icon, hindi, english, map,id) {
   const creat = document.getElementById("maincon");
   creat.innerHTML += `<section   class="mainsection">
-  <div class="iconname shadow">${icon}</div>
-  <div class="hindi shadow">${hindi}</div>
-  <div class="english shadow">${english}</div>
-  <div class="map"><a href="${map}">Google Map <span class="material-symbols-outlined">
-    location_on 
-    </span></a></div>
+  <div class="iconname itext gm">${icon}</div>
+  <div class="hindi hindiname">${hindi}</div>
+  <div class="english engname ">${english}</div>
+  <a href="${map}" class="map glow-on-hover gm" target="_blank" rel="noopener noreferrer"><img src="icons8-google-maps-old.svg" alt="google-maps"><div class="gmtext">
+  Google Map
+  </div></a>
 
 </section>`;
 
@@ -70,7 +70,8 @@ function topcreat(icon, hindi, english, map,id) {
 
 
 data.forEach((e) => {
-  topcreat(e.icon, e.hindi, e.english, e.map,e.id);
+  let lowerStr = e.english.toLowerCase();
+  topcreat(e.icon, e.hindi, lowerStr, e.map,e.id);
   
   
 });

@@ -7,19 +7,18 @@ const buttonw = document.getElementById("buttonshow");
 function allcreate(icon,hindi,english,map){
   const creat  = document.getElementById("maincon");
   creat.innerHTML +=  `<section   class="mainsection">
-  <div class="iconname">${icon}</div>
-  <div class="hindi">${hindi}</div>
-  <div class="english">${english}</div>
-  <div class="map"><a href="${map}">Google Map <span class="material-symbols-outlined">
-    location_on 
-    </span></a></div>
+  <div class="iconname text">${icon}</div>
+  <div class="hindi hindiname">${hindi}</div>
+  <div class="english engname">${english}</div>
+  <a href="${map}" class="map glow-on-hover" target="_blank" rel="noopener noreferrer"><div>Google Map <img src="google-maps.svg" alt="google-maps"></div></a>
   
 </section>`;
 };
 
 function loader() {
   data.forEach((e) =>{
-    allcreate(e.icon,e.hindi,e.english,e.maplocation)
+    let lowerStr = e.english.toLowerCase();
+    allcreate(e.icon,e.hindi,lowerStr,e.maplocation)
   })
 }
 
