@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Tanishq Chejara S/O Kamlesh Kumar Chejara" />
+    <meta name="description" content="MLSU Campus Locations" />
+    <meta name="keyword" content="MLSU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mlsu campus</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/loadingscreen.css">
+    <script defer type="module" src="/functionjs/loading.js"></script>
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Resource style -->
+
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="/css/headerstyle.css">
+    <link rel="stylesheet" href="/css/aboutstyle.css">
+    <link rel="stylesheet" href="/css/qrstyle.css">
+    <link rel="stylesheet" href="/css/iconstyle.css">
+ 
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/easyqrcodejs/dist/easy.qrcode.min.js"></script>
+
+    <script  src="/functionjs/aboutbutton.js"></script>
+    <script defer type="module" src="/functionjs/toplocat.js"></script>
+    <script defer type="module" src="/functionjs/showbtn.js"></script>
+    <script defer type="module" src="/functionjs/navigation.js"></script>
+    <script defer type="module" src="/functionjs/navItemLoader.js"></script>
+
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+
+
+  <body >
+    <div class="catf">
+      <div class="cat">
+        <div class="ear ear--left"></div>
+        <div class="ear ear--right"></div>
+        <div class="face">
+          <div class="eye eye--left">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="eye eye--right">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="muzzle"></div>
+        </div>
+      </div>
+    </div>
+    <header>
+      
+      <nav class="navbar">
+        <div class="container">
+          
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="#">
+              <object class="obje" data="svg/logo_red.svg" type="image/svg+xml"></object>
+             <!--  <h4>Awesome<span>logo</span></h4> -->
+            </a>
+          </div>
+      
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li class="active"><a id="homedown" href="#">Home</a></li>
+              <li class="navbar-dropdown">
+                <a href="#" id="admindown" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                  Administrative <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id">
+
+                </ul>
+              </li>
+              <li class="navbar-dropdown">
+                <a id="departdown" href="#" class="dropdown-toggler" data-dropdown="blog">
+                  Department <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                </ul>
+              </li>
+              <!-- <li class="navbar-dropdown">
+                <a id="otherdown" href="#" class="dropdown-toggler" 
+                data-dropdown="blog">
+                  Other <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="otherblog">
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                </ul>
+              </li> -->
+              
+              <li>
+                <div class="containerr">
+                  <button id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup')" aria-controls="myPopup" aria-label="Open popup">About</button>
+                </div>
+               
+                
+                <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+                  <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+                    <h2 id="popupTitle">About Us</h2>
+                    <p id="popupText"><!-- About US details --></p>
+                    <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Close</button>
+                  </div>
+                </div>
+ 
+              </li>
+              <!-- <li><a href="#">Signin</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="cd-main-content">
+      <section class="mainwide">
+      <section  id="maincon">
+      <!-- <section   class="mainsection">
+        <div class="iconname">icon</div>
+        <div class="hindi">hindi</div>
+        <div class="english">english</div>
+        <div class="map"><a href="">Google Map <span class="material-symbols-outlined">
+          location_on 
+          </span></a></div>
+        <div class="qr"><button type="button">
+          <img src="svg/qr_code.svg" alt="qr">
+        </button></div>
+      </section> -->
+      </section>
+      <div class="showmore" id="buttondiv">
+        <button class="button-31" type="button" id="buttonshow">Show More</button>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          5534 Somewhere In. The World 22193-10212<br>
+              
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+    
+            <li>
+              <a href="#">Print</a>
+            </li>
+                
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+          
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+            
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+            
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+            
+            <li>
+              <a href="#">Automation</a>
+            </li>
+            
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+            
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+        
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+        </div>
+      </div>
+    </footer>
+
+    
+  </body>
+
+</html>
