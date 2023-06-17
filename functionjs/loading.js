@@ -27,7 +27,7 @@
     setVisible('.cat', false);
   }); */
 
-window.addEventListener("DOMContentLoaded",()=>{
+window.addEventListener("load",()=>{
   const loader = document.querySelector(".catf");
   loader.classList.add("catf-hidden")
 })
