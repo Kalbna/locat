@@ -3,12 +3,46 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
-/* header{
-  
+*, *::after, *::before {
+  box-sizing: border-box;
 }
-.navbar-header > a{
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #111433;
+  background-color: #ffffff;
+}
+
+a {
+  color: #3f8654;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+/* header {
+  height: 100px;
+  background: #ffffff;
+} */
+header{
+  height: 100px;
+}
+.cd-main-content {
+  
+  min-height: calc(100vh - 100px);
+  padding: 2em 5%;
+  line-height: 2;
+}
+
+
+
+/* .navbar-header > a{
   max-width: 454px;
   width: 70%;
 }
@@ -37,13 +71,14 @@
 .obje{
   min-width: 509px;
   width:50%;
+  border: 1px solid blue;
 }
-@media screen and (max-width:950px) {
+/* @media screen and (max-width:950px) {
   .obje{
     min-width: 330px;
   }
   
-}
+} */
 @media  screen and (max-width:768px) {
   header{
     height: min-content;
@@ -235,7 +270,8 @@ line-height: 1.45;
 .itext{
   display: grid;
   place-content: center;
-  font-size: 6rem;
+
+  font-size: 7rem;
   text-shadow: 1px 1px 1px #919191,
       1px 2px 1px #919191,
       1px 3px 1px #919191,
@@ -251,3 +287,49 @@ line-height: 1.45;
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
 }
+
+.elementbutton{
+  height:40px;
+  width:330px;
+  float: right;
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border: 1px solid teal;
+}
+.elebtn{
+  width: 35px;
+  border: 1px solid brown;
+  border-radius: 20%;
+}
+.eebt{
+  width: 35px;
+  height: 100%;
+}
+.elebtn:nth-child(1){
+  background-color: white;
+}
+.elebtn:nth-child(2){
+  background-color: red;
+}
+.elebtn:nth-child(3){
+  background-color: black;
+}
+.elebtn:nth-child(4){
+  background-color: yellow;
+}
+.elebtn:hover{
+  cursor: pointer; ;
+  box-shadow: 0 0 3rem #f44336;
+}
+/* .elebtnn:nth-child(1){
+  font-size: normal;
+}
+.elebtnn:nth-child(2){
+  font-size: large;
+}
+.elebtnn:nth-child(3){
+  font-size: x-large;
+} */

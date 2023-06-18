@@ -18,7 +18,7 @@
     <script defer type="module" src="functionjs/loading.js"></script>
 
     <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <!-- Resource style -->
 
     <link rel="stylesheet" href="css/footerstyle.css">
@@ -44,9 +44,12 @@
     <link rel="stylesheet" href="css/last.css">
   </head>
 
-
-
-  <body >
+<!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+ -->
+ 
+  <body  >
     
 
     <div class="catf">
@@ -75,8 +78,9 @@
               <span></span>
               <span></span>
               <span></span>
+              
             </button>
-            <a href="#">
+            <a href="/index.html" id="logolink">
               <object class="obje" data="svg/logo_red.svg" type="image/svg+xml"></object>
              <!--  <h4>Awesome<span>logo</span></h4> -->
             </a>
@@ -133,6 +137,17 @@
       </nav>
     </header>
     <main class="cd-main-content">
+      <section class="elementbutton ebtn">
+        <button class="elebtn" type="button" data-set-theme="dafault" data-act-class="ACTIVECLASS" ></button>
+        <button class="elebtn" type="button" data-set-theme="red" data-act-class="ACTIVECLASS" ></button>
+        <button class="elebtn" type="button" data-set-theme="dark" data-act-class="ACTIVECLASS" ></button>
+        <button class="elebtn" type="button" data-set-theme="bumblebee" data-act-class="ACTIVECLASS" ></button>
+        <span class="ebtnbar">
+          <button type="button" class="elebtnn eebt">A-</button>
+          <button type="button" class="elebtnn eebt" >A</button>
+          <button type="button" class="elebtnn eebt">A+</button>
+        </span>
+      </section>
       <section class="mainwide">
       <section  id="maincon">
       <!-- <section   class="mainsection">
@@ -154,15 +169,21 @@
     </main>
     <footer class="footer" id="footsec">
       <div class="footer__addr">
-        <h1 class="footer__logo">Something</h1>
+        <h1 class="footer__logo">Mohanlal Sukhadia University</h1>
             
         <h2>Contact</h2>
-        
+        <br>
         <address>
-          5534 Somewhere In. The World 22193-10212<br>
+          Mohanlal Sukhadia University, Udaipur, 313001, Rajasthan, India<br>
               
-          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          <a class="footer__btn" href="mailto:registrar@mlsu.ac.in">E-mail: registrar@mlsu.ac.in</a>
+          <a href="tel:+0294-2471505">Helpline:0294-2471505</a>
+          <br>
+          <br>
+          <a  href="http://www.mlsu.ac.in/upload/GST.pdf">GSTIN: 08AAAJM1548D1ZE</a>
+          
         </address>
+     
       </div>
       <span class="air air1"></span>
       <ul class="footer__nav">
@@ -171,45 +192,49 @@
     
           <ul class="nav__ul">
             <li>
-              <a href="#">Online</a>
+              <a href="https://www.mlsu.ac.in/index.html">Official Website</a>
             </li>
     
             <li>
-              <a href="#">Print</a>
+              <a href="https://twitter.com/apnamlsu">Twitter</a>
             </li>
                 
             <li>
-              <a href="#">Alternative Ads</a>
+              <a href="https://www.facebook.com/mohanlalsukhadiauniversityudaipur">Facebook</a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/apnamlsu/">Instagram</a>
+            </li>
+            
           </ul>
         </li>
         
         <li class="nav__item nav__item--extra">
-          <h2 class="nav__title">Technology</h2>
+          <h2 class="nav__title">Quick Links</h2>
           
           <ul class="nav__ul nav__ul--extra">
             <li>
-              <a href="#">Hardware Design</a>
+              <a href="https://www.mlsu.ac.in/Board-of-Management">Board-of-Management</a>
             </li>
             
             <li>
-              <a href="#">Software Design</a>
+              <a href="https://www.mlsu.ac.in/Registrar">Registrar</a>
             </li>
             
             <li>
-              <a href="#">Digital Signage</a>
+              <a href="https://www.mlsu.ac.in/Online-Admission20">Admission</a>
             </li>
             
             <li>
-              <a href="#">Automation</a>
+              <a href="https://iums.mlsuportal.in/GuestHouse/GHM_guestrequest.aspx">GuestHouse</a>
             </li>
             
             <li>
-              <a href="#">Artificial Intelligence</a>
+              <a href="https://www.mlsu.ac.in/MLSU-in-News">MLSU-in-News</a>
             </li>
             
             <li>
-              <a href="#">IoT</a>
+              <a href="https://www.mlsu.ac.in/Sports-Board">Sports-Board</a>
             </li>
           </ul>
         </li>
@@ -219,25 +244,30 @@
           
           <ul class="nav__ul">
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=433">Privacy Policy</a>
             </li>
             
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=435">Terms of Use</a>
             </li>
             
             <li>
-              <a href="#">Sitemap</a>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=434">Disclaimer</a>
+            </li>
+            <li>
+              Nodal Officer : Dr. Avinash Panwar
             </li>
           </ul>
         </li>
       </ul>
       <span class="air air2"></span>
       <div class="legal">
-        <p>&copy; 2019 Something. All rights reserved.</p>
+        <p>Copyright &copy; 2023 Mlsu. All rights reserved.</p>
         
         <div class="legal__links">
-          <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+          <span>Developed and Design by <b> Tanishq Chejara </b><br><br>
+            Powered by Avid Web Solutions Pvt. Ltd.
+          </span>
         </div>
       </div>
       <span class="air air3"></span>

@@ -9,11 +9,11 @@ const otherblock = document.getElementById("otherdown"); */
 var capWord;
 function adminloader(english) {
   
-  admin.innerHTML += `<li><a href="">${english}</a></li>
+  admin.innerHTML += `<li ><a  href="">${english}</a></li>
   <li class="separator"></li>`
 };
 function departloader(english) {
-  depart.innerHTML += `<li><a href="">${english}</a></li>
+  depart.innerHTML += `<li ><a  href="">${english}</a></li>
   <li class="separator"></li>`
 };
 function otherloader(english) {

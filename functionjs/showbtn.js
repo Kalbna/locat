@@ -7,11 +7,12 @@ const buttonw = document.getElementById("buttonshow");
 function allcreate(icon,hindi,english,map){
   const creat  = document.getElementById("maincon");
   creat.innerHTML +=  `<section   class="mainsection">
-  <div class="iconname text">${icon}</div>
+  <div class="iconname gm itext">${icon}</div>
   <div class="hindi hindiname">${hindi}</div>
   <div class="english engname">${english}</div>
-  <a href="${map}" class="map glow-on-hover" target="_blank" rel="noopener noreferrer"><div>Google Map <img src="google-maps.svg" alt="google-maps"></div></a>
-  
+  <a href="${map}" class="map glow-on-hover gm" target="_blank" rel="noopener noreferrer"><img src="icons8-google-maps-old.svg" alt="google-maps"><div class="gmtext">
+  Google Map
+  </div></a>
 </section>`;
 };
 

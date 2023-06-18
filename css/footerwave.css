@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: 40.375em) {
+/* @media screen and (max-width: 40.375em) {
   #footsec{
    height: 50vh;
   }
@@ -71,4 +71,4 @@
   #footsec{
     height: 75vh;
   }
-}
+} */

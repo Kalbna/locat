@@ -1,0 +1,141 @@
+/*mobile devices*/
+@media screen and (width <= 481px) {
+  #logolink{
+    width: 300px;
+  }
+  .elementbutton{
+    width: 100%;
+    float: none;
+    top: 0;
+    justify-content:flex-start;
+    gap: 2rem;  
+  }
+  .ebtnbar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.5rem;
+    flex-grow: 1;
+  }
+  #footsec{
+    height:calc(65vh + 95px);
+  }
+  #footsec .air{
+    height: 75px;
+  }
+}
+/* ipads,Tablets*/
+@media screen and (481px < width <= 768px) {
+  .obje{
+    width: 100%;
+    max-width: none;
+    padding-right: 10%;
+  }
+  #logolink{
+    width: 100%;
+  }
+  .navbar .navbar-header .navbar-toggler{
+    width: 30px;
+    height: 30px;
+  }
+  .elementbutton{
+    width: 100%;
+    float: none;
+    top: -10px;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .ebtnbar{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    float: right;
+    border: 1px solid blueviolet;
+  }
+  #footsec{
+    height:calc(60vh + 95px);
+  }
+  @media screen and  (646px <= width <= 768px) {
+    #footsec{
+      height:calc(25vh + 95px);
+    }
+  }
+ 
+  #footsec .air{
+    height: 75px;
+  }
+  
+}
+/*small screen,laptop*/
+@media screen and (769px<= width <= 1024px) {
+  @media screen and (width < 950px) {
+    header{
+      height: min-content;
+    }
+  }
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(20vh + 100px));
+  }
+  #logolink{
+    width: 509px;
+  }
+  #footsec{
+    height: 20vh;
+  }
+  #footsec .air{
+    height: 85px;
+  }
+}
+/* Desktop large screen*/
+@media screen and (1025px <= width <= 1200px )  {
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+    
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(20rem + 100px));
+  }
+/*   .navbar .navbar-header > a{
+    border: 10px solid magenta;
+  }
+  .navbar,.navbar .container{
+    flex-wrap: nowrap;
+  }
+  .navbar .container{
+    max-width: 100%;
+  } */
+  #footsec{
+    height: 20vh;
+  }
+  #footsec .air{
+    height: 85px;
+  }
+
+}
+/*Extra large screen,TV*/
+@media screen and (1201px< width ) {
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+    
+  }
+  .obje{
+    width:510px ;
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(20vh + 100px));
+  }
+  #footsec{
+    height: 30vh;
+  }
+  #footsec .air{
+    height: 0px;
+  }
+
+}
