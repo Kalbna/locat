@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+ /*  font-size: 1.6rem; */
   font-family: sans-serif;
   color: #111433;
   background-color: #ffffff;
@@ -144,17 +144,23 @@ header{
   z-index: 33;
 }
 
+
+
 body{
-  max-width: 1150px;
+ 
 /*   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border: 1px solid blueviolet;
   
 }
-
+.bodyauto{
+  max-width: 1150px;
+  /* min-width: 1140px; */
+  margin: 0 auto;
+}
 
 /* .text {
   width: 200px;
@@ -205,8 +211,7 @@ line-height: 1.45;
   /* color: #fff; */
   text-align: center;
   padding: 20px auto;
-
-  text-shadow: 0 1px 0 #dba1a1, 0 2px 0 #d89999, 0 3px 0 #d59292, 0 4px 0 #d28a8a, 0 5px 0 #cf8383, 0 6px 0 #cd7c7c, 0 7px 0 #ca7474, 0 8px 0 #c76d6d, 0 0 5px rgba(230, 139, 139, .05), 0 -1px 3px rgba(230, 139, 139, .2), 0 9px 9px rgba(230, 139, 139, .3), 0 12px 12px rgba(230, 139, 139, .3), 0 15px 15px rgba(230, 139, 139, .3);
+  text-shadow: -2px 3px 0 #dba1a1, 0 2px 0 #d89999, 0 3px 0 #d59292, 0 4px 0 #d28a8a, 0 5px 0 #cf8383, 0 6px 0 #cd7c7c, 0 7px 0 #ca7474, 0 8px 0 #c76d6d, 0 0 5px rgba(230, 139, 139, .05), 0 -1px 3px rgba(230, 139, 139, .2), 0 9px 9px rgba(230, 139, 139, .3), 0 12px 12px rgba(230, 139, 139, .3), 0 15px 15px rgba(230, 139, 139, .3);
 }
 
 
@@ -260,10 +265,10 @@ line-height: 1.45;
 }
 @keyframes button-animation {
   0% {
-    box-shadow: 0 0 12rem #f44336;
+    box-shadow: 0 0 12rem #626262;
  }
   100% {
-    box-shadow: 0 0 3rem #f44336;
+    box-shadow: 0 0 3rem #626262;
  }
 }
 
@@ -333,3 +338,30 @@ line-height: 1.45;
 .elebtnn:nth-child(3){
   font-size: x-large;
 } */
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(10px);
+  /* and a transition */
+  transition: all 0.5s ease;
+}
+
+.showBtnnn {
+  opacity: 1;
+  transform: translateY(0);
+}
