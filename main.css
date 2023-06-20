@@ -208,6 +208,7 @@ line-height: 1.45;
   height: 60px;
   display: grid;
   place-content: center;
+  line-height: normal;
   /* color: #fff; */
   text-align: center;
   padding: 20px auto;
@@ -293,7 +294,7 @@ line-height: 1.45;
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
-.elementbutton{
+/* .elementbutton{
   height:40px;
   width:330px;
   float: right;
@@ -312,8 +313,8 @@ line-height: 1.45;
 .eebt{
   width: 35px;
   height: 100%;
-}
-.elebtn:nth-child(1){
+} */
+/* .elebtn:nth-child(1){
   background-color: white;
 }
 .elebtn:nth-child(2){
@@ -328,7 +329,7 @@ line-height: 1.45;
 .elebtn:hover{
   cursor: pointer; ;
   box-shadow: 0 0 3rem #f44336;
-}
+} */
 /* .elebtnn:nth-child(1){
   font-size: normal;
 }
@@ -338,6 +339,28 @@ line-height: 1.45;
 .elebtnn:nth-child(3){
   font-size: x-large;
 } */
+
+.elementbutton{
+  width: 60px;
+  height: 180px;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  z-index: 1000;
+  border: 1px solid firebrick;
+}
+.elementbutton > button{
+  width: 50px;
+  height: 50px;
+}
+.elementbutton-hide{
+  display:none;
+}
 .scrollToTopBtn {
   background-color: black;
   border: none;

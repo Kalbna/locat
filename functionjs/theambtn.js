@@ -1,1 +1,5 @@
-document.body.style.backgroundColor ="var(--black)"
+const inbtn = document.getElementById("increasetext");
+
+inbtn.addEventListener("click",() =>{
+  
+})

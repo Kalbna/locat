@@ -28,7 +28,9 @@
   }); */
 
 window.addEventListener("load",()=>{
+  var fontbtn = document.querySelector('#fontbtn');
   const loader = document.querySelector(".catf");
   loader.classList.add("catf-hidden");
   document.body.classList.add("bodyauto");
+  fontbtn.classList.remove("elementbutton-hide");
 })

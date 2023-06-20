@@ -6,26 +6,47 @@
   --Dlinkcolor:#373737;
   --Dmaintextcolor:#111111;
   --Diconhovercolor:#C5C5C5;
-  --Dmaintextbgcolor:#FFF7F7;
+  --Dmaintextbgcolor:#d32727;
   --Diconbordercolor:#1F1D1D;
   --Diconboxshawdocolor:#626262;
   --Dmaintextbordercolor:#707070;
   --Dmainintextbgcolor:#FFE5E5;
+  --Ddevcolor:#0F1110;
+  /*Font */
+  --Dmaintextfont: 'Noto Sans','HP Simplified Hans','sans-serif';
+  --Dmaintextfontsize: 2rem;
+  --Dheadlinkfont:'Noto Sans','HP Simplified Hans', 'serif';
+  --Dheadlinkfontsize:2rem;
+  --Dfootheadingfont:'Noto Sans','HP Simplified Hans','sans-serif';
+  --Dfootheadingfontsize:2.2rem;
+  --Dheaddropfontsize:1.5rem;
 }
 .navbar, .navbar > .container {
   background-color: var(--Dbgcolor);
-
+  
 }
 #homedown,#admindown,#departdown,#openMyPopup{
   color: var(--Dtextcolor);
+  font-family: var(--Dheadlinkfont);
+  font-size: var(--Dheadlinkfontsize);
 }
 #homedown:hover,#admindown:hover,#departdown:hover,#openMyPopup:hover{
   color: var(--Dhovertextcolor);
   background: var(--Dtextcolor);
 }
-#my-dropdown-id > li>a, .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
+#my-dropdown-id > li>a,.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
   background-color: var(--Dbgcolor);
   color: var(--Dtextcolor);
+}
+.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
+  background-color: var(--Dbgcolor);
+  color: var(--Dtextcolor);
+  font-family: var(--Dmaintextfont);
+  font-size: var(--Dheaddropfontsize);
+}
+#my-dropdown-id > li>a:hover, .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a:hover{
+  color: var(--Dhovertextcolor);
+  background: var(--Dtextcolor);
 }
 .navbar .navbar-menu .navbar-nav .dropdown > .separator{
   background-color: var(--Dtextcolor);
@@ -59,16 +80,74 @@
   1px 30px 60px rgba(16,16,16,0.4)*/
 
 .engname,.hindiname{
-  border-color: var(--Dmaintextbordercolor);
-  background-color: var(--Dmainintextbgcolor);
+  border-color: transparent;
+  background-color: var(--Dhovertextcolor);
   border-radius: 12px;
+  font-family: var(--Dmaintextfont);
+  font-size: var(--Dmaintextfontsize);
 }
 
+#footsec{
+  border-top: 1px solid var(--Dtextcolor);
+}
+.footer__logo{
+  color: var(--Dtextcolor);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--Dfootheadingfontsize);
+}
 
-
-
-
-
+.footer address{
+  color: var(--Dmaintextcolor);
+  font-family: var(--Dfootheadingfont);
+}
+.footer__addr h2 {
+  font-family: var(--Dfootheadingfont);
+}
+.footer address a{
+  color: var(--Dlinkcolor);
+}
+.footer li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight: 600; */
+}
+b{
+  color: var(--Ddevcolor);
+  font-family: var(--Dmaintextfont);
+  font-weight: 800;
+}
+#cop{
+  color: var(--Ddevcolor);
+  font-weight: 600;
+}
+#offi{
+  color: var(--Dlinkcolor);
+  font-weight: 900;
+}
+.nav__title{
+  color: var(--Dmaintextcolor);
+  font-family: var(--Dfootheadingfont);
+}
+.nav__ul a{
+  color: var(--Dmaintextbordercolor);
+}
+.dev{
+  color: var(--Ddevcolor);
+}
+.scrollToTopBtn{
+  border-radius: 30%;
+  color: var(--Dhovertextcolor);
+  background-color: var(--Dlinkcolor);
+}
+.elementbutton > button,.button-31{
+  color: var(--Dhovertextcolor);
+  background-color: var(--Dlinkcolor);
+}
+.button-31{
+  font-weight: 700;
+  font-style: italic;
+  
+}
 /*mobile devices*/
 @media screen and (width <= 481px) {
  /*  body{
@@ -76,10 +155,25 @@
     max-width: 1150px;
     
   } */
+  :root{
+    --Dmaintextfontsize: 1.65rem;
+  }
+  .mainsection{
+    width: 300px;
+    height: 300px;
+  }
   #logolink{
     width: 300px;
   }
-  .elementbutton{
+  .gm{
+    width: 9rem;
+    height: 9rem;
+  }
+  .hindiname,.engname{
+    width: 220px;
+    height: 50px;
+  }
+/*   .elementbutton{
     width: 100%;
     float: none;
     top: 0;
@@ -92,9 +186,9 @@
   .ebtnbar{
     display: flex;
     justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-grow: 1;
-  }
+  } */
   #footsec{
     /* height:calc(65vh + 95px); */
     height: 750px;
@@ -110,6 +204,13 @@
     max-width: 1150px;
     
   } */
+  :root{
+    --Dmaintextfontsize: 1.85rem;
+  }
+  .mainsection{
+    width: 320px;
+    height: 320px;
+  }
   .obje{
     width: 100%;
     max-width: none;
@@ -123,21 +224,24 @@
     height: 30px;
   }
   .elementbutton{
+    top: 130px;
+  }
+ /*  .elementbutton{
     width: 100%;
     float: none;
     top: -10px;
     justify-content: flex-start;
     gap: 1.5rem;
     position: relative;
-  }
-  .ebtnbar{
+  } */
+/*   .ebtnbar{
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     gap: 1.5rem;
     float: right;
     border: 1px solid blueviolet;
-  }
+  } */
   #footsec{
    /*  height:calc(60vh + 95px); */
     height: 740px;
@@ -156,6 +260,9 @@
 }
 /*small screen,laptop*/
 @media screen and (769px<= width <= 1024px) {
+  :root{
+    --Dmaintextfontsize: 1.9rem;
+  }
   @media screen and (width < 950px) {
     header{
       height: min-content;
@@ -167,6 +274,10 @@
   }
   .cd-main-content{
     min-height: calc(100vh - calc(20rem + 100px));
+  }
+  .mainsection{
+    width: 350px;
+    height: 350px;
   }
   #logolink{
     width: 509px;
@@ -187,6 +298,10 @@
   }
   .cd-main-content{
     min-height: calc(100vh - calc(20rem + 100px));
+  }
+  .mainsection{
+    width: 375px;
+    height: 375px;
   }
 /*   .navbar .navbar-header > a{
     border: 10px solid magenta;
